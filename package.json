@@ -1,0 +1,66 @@
+{
+  "name": "capacitor-preferences-react",
+  "version": "0.0.1",
+  "description": "React hooks for @capacitor/preferences API",
+  "keywords": [
+    "react",
+    "capacitor",
+    "preferences",
+    "hooks",
+    "ionic framework",
+    "ionic"
+  ],
+  "author": "Mohamed Ali Mejbar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AliMejbar/capacitor-preferences-react.git"
+  },
+  "files": [
+    "dist/"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run clean && npm run transpile",
+    "clean": "rimraf dist",
+    "eslint": "eslint \"src/**/*.{ts,tsx,js,jsx}\"",
+    "lint": "npm run eslint",
+    "lint.fix": "npm run eslint -- --fix",
+    "test": "echo tests are in process",
+    "transpile": "tsc"
+  },
+  "prettier": "./.prettierrc.json",
+  "eslintConfig": {
+    "extends": "./.eslintrc.json"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testPathIgnorePatterns": [
+      "node_modules",
+      "dist-transpiled",
+      "dist",
+      "test-app"
+    ],
+    "modulePaths": [
+      "<rootDir>"
+    ]
+  },
+  "dependencies": {
+    "@capacitor/core": ">=4.0.0",
+    "@capacitor/preferences": "*",
+    "react": "*"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.7",
+    "@types/react": "^18.0.17",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^28.1.3",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4"
+  }
+}
